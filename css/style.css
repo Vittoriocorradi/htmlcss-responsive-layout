@@ -59,6 +59,16 @@ section:nth-of-type(even) {
 
 /*
 --------
+BUTTONS
+--------
+*/
+
+.btn {
+    display: block;
+}
+
+/*
+--------
 HEADER
 --------
 */
