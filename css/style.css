@@ -20,7 +20,8 @@ header,
 #jumbotron,
 #strategic-planning,
 #partners,
-#benefits {
+#benefits,
+#about-us {
     padding: 0 1.875rem;
 }
 
@@ -182,6 +183,15 @@ Jumbotron
         width: calc(100% / 3 - 1.875rem);
     }
     
+}
+
+/* About us */
+
+@media screen and (min-width: 768px) {
+
+    #about-us .container-big {
+        flex-wrap: nowrap;
+    }
 }
 
 
