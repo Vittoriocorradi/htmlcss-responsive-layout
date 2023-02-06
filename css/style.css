@@ -25,7 +25,8 @@ a {
 }
 
 header,
-#strategic-planning .strategic-planning {
+#strategic-planning .strategic-planning,
+#partners .partners {
     color: #fff;
 }
 
@@ -47,7 +48,9 @@ main #jumbotron p {
 }
 
 #jumbotron .col-small,
-#strategic-planning .app-development {
+#strategic-planning .app-development,
+#partners,
+#partners img {
     text-align: center;
 }
 
@@ -64,11 +67,36 @@ main #jumbotron p {
     line-height: 1.8em;
 }
 
+#partners h6 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.125rem ;
+}
+
+#partners h3 {
+    color: var(--second-color);
+    font-size: 2.5em;
+}
+
+#partners .partners p {
+    line-height: 2em;
+
+}
+
+#partners .partners h5 {
+    font-size: 1.625rem;
+}
+
 @media screen and (min-width:992px) {
 
     #strategic-planning .strategic-planning h3 {
         font-size: 2.5em;
     }
+
+    #partners h6 {
+        font-size: 1rem;
+    }
+
 }
 
 /*
@@ -345,11 +373,54 @@ Jumbotron
 
 /* Partners */
 
+#partners h6 {
+    margin: 4.0625rem 0 2.8125rem;    
+}
+
+#partners .container-big > p {
+    margin: 4.0625rem 0;
+}
+
+#partners .partners {
+    background-color: var(--second-color);
+    padding: 1.5625rem .9375rem 2.5rem;
+    margin-bottom: 1.875rem;
+    justify-content: center;
+    border-radius: 2.5rem;
+}
+
+#partners .partners .quotes {
+    /* width: 65%; */
+    flex-grow: 1;
+    align-content: center;
+    justify-content: center;
+    gap: 1.875rem;
+}
+
+#partners .partners i {
+    margin: 0 .625rem;
+}
+
+#partners .partners img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 1.5625rem;
+}
+
 @media screen and (min-width:768px) {
 
-    #partners .partners {
+    #partners > .partners {
         flex-wrap: nowrap;
-    }    
+    }
+    
+    #partners .partners .quotes {
+        justify-content: flex-start;
+        text-align: left;
+        margin-left: .9375rem;
+        width: 75%;
+    }
 }
 
 /* Benefits */
