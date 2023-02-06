@@ -18,7 +18,8 @@ COMMON
 
 header,
 #jumbotron,
-#strategic-planning {
+#strategic-planning,
+#partners {
     padding: 0 1.875rem;
 }
 
@@ -144,6 +145,15 @@ Jumbotron
     #strategic-planning .container-mid > div {
         width: 50%;
     }
+}
+
+/* Partners */
+
+@media screen and (min-width:768px) {
+
+    #partners .partners {
+        flex-wrap: nowrap;
+    }    
 }
 
 
