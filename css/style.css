@@ -24,7 +24,8 @@ a {
     text-decoration: none;
 }
 
-header {
+header,
+#strategic-planning .strategic-planning {
     color: #fff;
 }
 
@@ -45,8 +46,29 @@ main #jumbotron p {
     line-height: 2em;
 }
 
-#jumbotron .col-small {
+#jumbotron .col-small,
+#strategic-planning .app-development {
     text-align: center;
+}
+
+#strategic-planning .strategic-planning h3 {
+    font-size: 4em;
+}
+
+#strategic-planning .app-development h5 {
+    font-size: 1.375rem;
+}
+
+#strategic-planning p {
+    font-size: .875rem;
+    line-height: 1.8em;
+}
+
+@media screen and (min-width:992px) {
+
+    #strategic-planning .strategic-planning h3 {
+        font-size: 2.5em;
+    }
 }
 
 /*
@@ -267,18 +289,57 @@ Jumbotron
 
 /* Strategic planning */
 
-#strategic-planning .container-big {
+#strategic-planning .container-mid {
     align-items: flex-end;
+    padding: 7.5rem 0 3.75rem;
+    justify-content: center;
+}
+
+#strategic-planning .container-mid .strategic-planning h3 {
+    margin: 8.125rem 0 3.125rem;
+}
+
+#strategic-planning .container-mid .app-development {
+    background-color: #fff;
+    padding: 2.5rem 2.5rem 1.875rem;
+    border-radius: 2.5rem;
+    margin-top: 2.1875rem;
+}
+
+#strategic-planning .app-development h5 {
+    margin: 1.5625rem 0;
+}
+
+#strategic-planning .app-development p {
+    margin-bottom: 2.1875rem;
+}
+
+#strategic-planning .app-development a {
+    display: inline-block;
+    color: #000;
+    background-color: var(--second-color);
+    padding: .3125rem .625rem;
+    border-radius: 50%;
+}
+
+#strategic-planning img {
+    width: 100%;
 }
 
 @media screen and (min-width:992px) {
 
     #strategic-planning .container-mid {
         flex-wrap: nowrap;
+        gap: 3.75rem;
     }
 
-    #strategic-planning .container-mid > div {
-        width: 50%;
+    #strategic-planning .container-mid .strategic-planning {
+        width: 55%;
+        flex-grow: 1;
+    }
+
+    #strategic-planning .container-mid .app-development {
+        width: 45%;
     }
 }
 
