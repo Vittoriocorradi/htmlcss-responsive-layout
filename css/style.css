@@ -99,6 +99,33 @@ main #jumbotron p {
 
 }
 
+#benefits h3 {
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#benefits h2, 
+#benefits h4 {
+    color: var(--second-color);
+}
+
+#benefits h2 {
+    font-size: 4em;
+}
+
+#benefits h4 {
+    font-size: 1.5em;
+}
+
+#benefits p {
+    line-height: 2em;
+}
+
+#benefits a {
+    color: #fff;
+}
+
 /*
 --------
 COMMON
@@ -425,6 +452,14 @@ Jumbotron
 
 /* Benefits */
 
+#benefits .container-big {
+    padding: 4.375rem 0 3.75rem;
+}
+
+#benefits h3 {
+    margin-bottom: 4.375rem;
+}
+
 #benefits .benefits-boxes {
     margin: 0 -0.9375rem;
 }
@@ -432,6 +467,22 @@ Jumbotron
 #benefits .benefits-boxes .benefit {
     background-color: #fff;
     margin: .9375rem;
+    padding: 3.125rem 2.5rem 1.875rem 1.5625rem;
+    border-radius: 1.875rem;
+}
+
+#benefits .benefit h4 {
+    margin: 1.875rem 0;
+}
+
+#benefits .benefit p {
+    margin-bottom: 1.875rem;
+}
+
+#benefits a {
+    background-color: var(--second-color);
+    padding: .625rem 3.125rem;
+    border-radius: 1.5625rem;
 }
 
 @media screen and (min-width:768px) {
