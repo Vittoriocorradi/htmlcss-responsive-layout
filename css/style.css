@@ -21,3 +21,43 @@ COMMON
     --first-color-light: #b5ddff;
     --second-color: #9792e4;
 }
+
+.flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.container-big {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/*
+--------
+HEADER
+--------
+*/
+
+header {
+    background-color: var(--first-color);
+}
+
+header .menu {
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+    header .menu {
+        display: block;
+    }
+
+    header .hamburger {
+        display: none;
+    }
+}
